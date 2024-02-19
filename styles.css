@@ -1,0 +1,111 @@
+
+/* Futuristic purple theme */
+body {
+    background-color: #2a2a2a;
+    color: #d4d4d4;
+}
+
+.card {
+    background-color: #3c3c3c;
+    border-color: #2d2d2d;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #999;
+}
+
+.btn-primary {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.btn-primary:hover {
+    background-color: #6a1f9a;
+    border-color: #6a1f9a;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(138, 43, 226, 0.5);
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.text-center {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.banner {
+    background: linear-gradient(45deg, #6a1f9a, #8a2be2);
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transform: perspective(1000px) rotateX(5deg);
+    animation: rotateBanner 5s infinite;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.banner p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #6a1f9a;
+}

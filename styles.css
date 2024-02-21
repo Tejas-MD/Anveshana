@@ -80,14 +80,15 @@ body {
 }
 
 .banner {
+    background-image: url('pics/update.jpg');
     background: linear-gradient(45deg, #6a1f9a, #8a2be2);
     color: #fff;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border-radius: 10px;/*
     transform: perspective(1000px) rotateX(5deg);
-    animation: rotateBanner 5s infinite;
+    animation: rotateBanner 5s infinite;*/
 }
 
 .banner h2 {
@@ -154,3 +155,8 @@ body {
 /* .whatsapp-btn:hover {
     background-color: #20B45B;
 } */
+.head {
+    text-align: center;
+    margin: 0 auto; /* Set margin to auto to center horizontally */
+    max-width: 600px; /* Adjust the max-width based on your design */
+}

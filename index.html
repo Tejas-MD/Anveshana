@@ -15,38 +15,33 @@
 <body>
 
   <div class="head">
-<img src="pics/head1.png"><br>
-<img src="pics/head2.png">
+    <img src="pics/head1.png"><br>
+    <img src="pics/head2.png">
 
 
 
   </div>
 
 
-    <div class="container">
-        <!-- event day happening now schedule -->
-        <div class="banner" style="background-image: url(pics/update.jpg);  margin: 20px; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-12 text-center">
-                        <h2 id="event-schedule">Opening Ceremony</h2>
-                    </div>
-                    <div class="col-md-9">
-                        <p id="event-description" style="margin-bottom: 20px;">Welcome to the Event! The event is about to start. Stay tuned!</p>
-                    </div>
-                    <div class="col-md-3 text-md-right" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                        <!--link-->
-                          
-                          
-                          <a href="https://www.google.com/maps/search/13.134332,+77.567931?entry=tts" class="btn btn-outline-light" target="_blank" style="padding: 10px 20px; font-size: 18px;">Event Venue</a>
-
-                        
+  <div class="container">
+    <!-- event day happening now schedule -->
+    <div class="banner" style="margin: 20px; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 text-center">
+            <h2 id="event-schedule">Opening Ceremony</h2>
+          </div>
+          <div class="col-md-9">
+            <p id="event-description" style="margin-bottom: 20px;">Welcome to the Event! The event is about to start.
+              Stay tuned!</p>
+          </div>
+          <div class="col-md-3 text-md-right"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <!--link-->
 
 
             <a href="https://www.google.com/maps/search/13.134332,+77.567931?entry=tts" class="btn btn-outline-light"
               target="_blank" style="padding: 10px 20px; font-size: 18px;">Event Venue</a>
-
-
 
 
           </div>
@@ -180,61 +175,64 @@
       </div>
     </div>
   </div>
-    <h1 class="text-center my-4">Get Support</h1>
-    <!-- Help Desk -->
-    <div class="row justify-content-center m-4">
-      <div class="col-md-6 col-sm-12">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <p class="form-description">Please fill out the form below to submit your query:</p>
-          </div>
+  <h1 class="text-center my-4">Get Support</h1>
+  <!-- Help Desk -->
+  <div class="row justify-content-center m-4">
+    <div class="col-md-6 col-sm-12">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <p class="form-description">Please fill out the form below to submit your query:</p>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <input type="text" id="unique-id" class="form-control mb-3" style="margin-bottom: 10px;" placeholder="Enter your UID">
-          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <input type="text" id="unique-id" class="form-control mb-3" style="margin-bottom: 10px;"
+            placeholder="Enter your UID">
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <textarea id="issue" class="form-control mb-3" style="height: 150px; margin-bottom: 10px;" placeholder="What is your issue?"></textarea>
-          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <textarea id="issue" class="form-control mb-3" style="height: 150px; margin-bottom: 10px;"
+            placeholder="What is your issue?"></textarea>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <!-- FILEPATH: /Users/binbasri0/Desktop/bmsit/Hackathons/Tejas-MD.github.io/index.html -->
-            <div>
-              <button id="submit-issue" type="button" class="btn btn-primary d-block mx-auto" style="margin-bottom: 10px;" onclick="executeGoogleFormsSubmit()">Send</button>
-            </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- FILEPATH: /Users/binbasri0/Desktop/bmsit/Hackathons/Tejas-MD.github.io/index.html -->
+          <div>
+            <button id="submit-issue" type="button" class="btn btn-primary d-block mx-auto" style="margin-bottom: 10px;"
+              onclick="executeGoogleFormsSubmit()">Send</button>
+          </div>
 
-            <script>
-              function sendIssue() {
-                var button = document.getElementById("submit-issue");
-                var originalText = button.innerHTML;
+          <script>
+            function sendIssue() {
+              var button = document.getElementById("submit-issue");
+              var originalText = button.innerHTML;
 
-                // Change button text to "Sending..."
-                button.innerHTML = "Sending...";
-                button.disabled = true;
+              // Change button text to "Sending..."
+              button.innerHTML = "Sending...";
+              button.disabled = true;
 
-                // Simulate sending message
-                setTimeout(function() {
-                  // Show confirmation message
-                  button.innerHTML = "Message Sent!";
-                  button.classList.add("btn-success");
+              // Simulate sending message
+              setTimeout(function () {
+                // Show confirmation message
+                button.innerHTML = "Message Sent!";
+                button.classList.add("btn-success");
 
-                  // Reset button after 2 seconds
-                  setTimeout(function() {
-                    button.innerHTML = originalText;
-                    button.classList.remove("btn-success");
-                    button.disabled = false;
-                  }, 2000);
+                // Reset button after 2 seconds
+                setTimeout(function () {
+                  button.innerHTML = originalText;
+                  button.classList.remove("btn-success");
+                  button.disabled = false;
                 }, 2000);
-              }
-            </script>
-          </div>
+              }, 2000);
+            }
+          </script>
         </div>
       </div>
     </div>
-</div>
+  </div>
+  </div>
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-dark text-muted">
@@ -264,21 +262,16 @@
         </a>
       </div>
     </section> -->
-    <div class="row">
-      <div class="col-md-3 col-lg-6">
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        <div class="powered-by-ieee">
-          <a href="https://www.ieee.org/" target="_blank">Powered by 
+      <div class="row">
+        <div class="col-md-3 col-lg-6">
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <div class="powered-by-ieee">
+              <a href="https://www.ieee.org/" target="_blank">Powered by
+            </div>
+            <img src="pics/ieee-logo1.jpg" alt="IEEE Logo" style="height: 300px; vertical-align: middle;">
+          </div></a>
+
         </div>
-        <img src="pics/ieee-logo1.jpg" alt="IEEE Logo" style="height: 300px; vertical-align: middle;">
-      </div></a>
-      
-    </div>
-    <div class="col-md-3 col-lg-6"></div>
-     
-    <div class="col-md-3 col-lg-6">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet_LIYBtTKUXZLYuSshu1Lgib5IDGRbFAaP1GSzhF3Z6yrKg/viewform?embedded=true" width="340" height="324" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
   </footer>
 
 

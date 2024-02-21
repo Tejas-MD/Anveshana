@@ -16,6 +16,7 @@ updateSchedule();
 setInterval(updateSchedule, 60000); // Update every minute
 
 
+// Google Forms Submit
 function executeGoogleFormsSubmit() {
     // Build the Field Ids and Answers dictionary object
     // (replace with your Google Form Ids and Answers)
@@ -45,7 +46,7 @@ function executeGoogleFormsSubmit() {
     var formData = Object.keys(bodyValues).map(key => encodeURIComponent(key) + "=" + encodeURIComponent(bodyValues[key])).join("&");
 
     // Set the onload event handler
-    xhr.onload = function() {
+    xhr.onload = function () {
         // Use the response status and text
         console.log(`Status : ${xhr.status} ${xhr.statusText}`);
         console.log(`Body : \n${xhr.responseText}`);
@@ -61,3 +62,14 @@ function executeGoogleFormsSubmit() {
     alert("Your response has been submitted successfully");
 
 }
+
+
+// for the tweets to be centered
+window.addEventListener('load', function () {
+    var tweetContainers = document.querySelectorAll('.tweet-container');
+    tweetContainers.forEach(function (container) {
+        container.style.display = 'flex';
+        container.style.justifyContent = 'center';
+        container.style.alignItems = 'center';
+    });
+});

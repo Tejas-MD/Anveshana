@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>College Locations</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="icon" href="static/favicon.ico">
 </head>
 
 
@@ -16,11 +16,7 @@
   <div class="head">
     <img src="pics/head1.png"><br>
     <img src="pics/head2.png">
-
-
-
   </div>
-
 
   <div class="container">
     <!-- event day happening now schedule -->
@@ -49,23 +45,28 @@
     </div>
   </div>
 
-  <style>
-    @keyframes rotateBanner {
-      0% {
-        transform: perspective(1000px) rotateX(20deg);
-      }
+  <!-- Twitter Embedd -->
+  <h1 class="text-center my-4 m-5">What is Happening</h1>
+  <div class="row">
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="text-center tweet-container">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">The best developer tools, free for students: <a
+              href="https://t.co/c6N3bP44Dq">https://t.co/c6N3bP44Dq</a> via <a
+              href="https://twitter.com/GitHubEducation?ref_src=twsrc%5Etfw">@githubeducation</a></p>&mdash; Mohammed
+          Ali
+          Al-sakkaf (@md_ali_alsakkaf) <a
+            href="https://twitter.com/md_ali_alsakkaf/status/1760208140866351429?ref_src=twsrc%5Etfw">February 21,
+            2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
 
-      50% {
-        transform: perspective(1000px) rotateX(-20deg);
-      }
 
-      100% {
-        transform: perspective(1000px) rotateX(20deg);
-      }
-    }
-  </style>
-
-  <h1 class="text-center my-4">College Locations</h1>
+  <!-- College locations -->
+  <h1 class="text-center my-4 m-5">College Locations</h1>
   <!-- Location Cards -->
   <div class="row">
     <!-- Location 1: Academic -->
@@ -174,7 +175,7 @@
       </div>
     </div>
   </div>
-  <h1 class="text-center my-4">Get Support</h1>
+  <h1 class="text-center my-4 m-5">Get Support</h1>
   <!-- Help Desk -->
   <div class="row justify-content-center m-4">
     <div class="col-md-6 col-sm-12">
@@ -202,31 +203,6 @@
             <button id="submit-issue" type="button" class="btn btn-primary d-block mx-auto" style="margin-bottom: 10px;"
               onclick="executeGoogleFormsSubmit()">Send</button>
           </div>
-
-          <script>
-            function sendIssue() {
-              var button = document.getElementById("submit-issue");
-              var originalText = button.innerHTML;
-
-              // Change button text to "Sending..."
-              button.innerHTML = "Sending...";
-              button.disabled = true;
-
-              // Simulate sending message
-              setTimeout(function () {
-                // Show confirmation message
-                button.innerHTML = "Message Sent!";
-                button.classList.add("btn-success");
-
-                // Reset button after 2 seconds
-                setTimeout(function () {
-                  button.innerHTML = originalText;
-                  button.classList.remove("btn-success");
-                  button.disabled = false;
-                }, 2000);
-              }, 2000);
-            }
-          </script>
         </div>
       </div>
     </div>
@@ -262,7 +238,7 @@
       </div>
     </section> -->
       <div class="row">
-        <div class="col-md-3 col-lg-6">
+        <div class="col-6">
           <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             <div class="powered-by-ieee">
               <a href="https://www.ieee.org/" target="_blank">Powered by

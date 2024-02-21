@@ -3,6 +3,8 @@
 body {
     background-color: #2a2a2a;
     color: #d4d4d4;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 1rem!important;
 }
 
 .card {
@@ -13,6 +15,8 @@ body {
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    height: 100%;
 }
 
 .card-body {
@@ -40,6 +44,7 @@ body {
 .card-text {
     font-size: 16px;
     color: #999;
+    
 }
 
 .btn-primary {
@@ -76,6 +81,8 @@ body {
     .col-sm-6 {
         flex: 0 0 50%;
         max-width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 

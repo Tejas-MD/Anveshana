@@ -1,18 +1,18 @@
-const schedule = [
-    { time: '12:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' },
-    { time: '01:00', event: 'Lunch Time', description: 'Take a break and have lunch, visit stalls' },
-    { time: '02:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' }
-];
+// const schedule = [
+//     { time: '12:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' },
+//     { time: '01:00', event: 'Lunch Time', description: 'Take a break and have lunch, visit stalls' },
+//     { time: '02:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' }
+// ];
 
-function updateSchedule() {
-    const currentTime = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-    const currentEvent = schedule.find(event => currentTime >= event.time) || schedule[0];
-    document.getElementById('event-schedule').textContent = currentEvent.event;
-    document.getElementById('event-description').textContent = currentEvent.description;
-}
+// function updateSchedule() {
+//     const currentTime = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+//     const currentEvent = schedule.find(event => currentTime >= event.time) || schedule[0];
+//     document.getElementById('event-schedule').textContent = currentEvent.event;
+//     document.getElementById('event-description').textContent = currentEvent.description;
+// }
 
-updateSchedule();
-setInterval(updateSchedule, 60000); // Update every minute
+// updateSchedule();
+// setInterval(updateSchedule, 60000); // Update every minute
 
 
 // Google Forms Submit

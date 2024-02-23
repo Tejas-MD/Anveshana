@@ -1,9 +1,7 @@
 const schedule = [
-    { time: '09:00', event: 'Opening Ceremony', description: 'The inaugration is about to begin, click here to navigate.' },
-    { time: '02:00', event: 'Registration', description: 'Registrations and accomadation.' },
-    { time: '02:00', event: 'Lunch Time', description: 'Time to grab some lunch and network.' },
-    { time: '01:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' },
-    { time: '00:00', event: 'Closing Ceremony', description: 'The event concludes with the closing ceremony.' }
+    { time: '12:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' },
+    { time: '01:00', event: 'Lunch Time', description: 'Take a break and have lunch, visit stalls' },
+    { time: '02:00', event: 'Evaluation Time', description: 'Time for evaluations and feedback.' }
 ];
 
 function updateSchedule() {

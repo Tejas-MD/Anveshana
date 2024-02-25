@@ -63,6 +63,10 @@ function executeGoogleFormsSubmit() {
 }
 
 
+
+
+
+
 // for the tweets to be centered
 window.addEventListener('load', function () {
     var tweetContainers = document.querySelectorAll('.tweet-container');
